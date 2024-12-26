@@ -58,3 +58,85 @@ let someNumber = 64
 let stringNumber = String(someNumber)      // now, someNumber number is converted to string
 console.log(stringNumber);
 console.log(typeof stringNumber);
+
+
+console.log(    );
+console.log(    );
+
+
+// *************************************Operations*************************************
+
+let value = 43
+let negValue = -value
+console.log(negValue);
+
+console.log( 2 + 3 ); // 5    // addition  
+console.log( 2 - 3 ); // -1   // subtraction
+console.log( 2 * 3 ); // 6    // multiplication
+console.log( 2 / 3 ); // 0.6666666666666666    // division
+console.log( 2 % 3 ); // 2    // modulus (remainder)
+console.log( 7 % 3 ); // 1    // modulus
+console.log( 2 ** 3 ); // 8   // exponentiation (power) 2^3 = 8 
+
+
+
+console.log(    );
+
+
+// ADDITION OF STRINGS
+let str1 = "Amrit"
+let str2 = "Singh"
+let fullName = str1 + " " + str2
+console.log(fullName);
+
+//or
+let str3 = "Harman"
+let str4 = " Singh"
+let fullName0 = str3 + str4
+console.log(fullName0);
+
+//or 
+let fullName1 = `${str1} ${str2}`
+console.log(fullName1);
+
+//or
+let fullName2 = str1.concat(" ", str2)
+console.log(fullName2);
+
+
+console.log(    );
+
+
+console.log( 2 + "4" )          // 24
+console.log( "2" + 4 )          // 24
+console.log( "2" + 4 + 5 )      // 245      // if string is present in the beginning, it will concatenate all the numbers as string
+console.log( 2 + 4 + "5" )      // 65       // if string is present in the end, beggining conversion will happen and then concatenation will happen with string
+
+console.log(    );
+
+console.log(true)               // true
+console.log(+true)              // 1     
+// console.log(true+)           // SyntaxError: Unexpected token '+'
+console.log(+"")                // 0
+
+let num1 , num2 , num3
+num1 = num2 = num3 = 2+3
+
+
+// INCREMENT AND DECREMENT OPERATORS
+// Prefix and Postfix Operators    ++a  and  a++       
+let gameCounter = 100
+gameCounter++
+console.log(gameCounter);       // 101 
+
+let gameCounter1 = 200
+++gameCounter1
+console.log(gameCounter1);      // 201
+
+let x = 100
+const y = x++
+console.log(`x:${x} y:${y}`)    // x:101 y:100
+
+let a = 100
+const b = ++a
+console.log(`a:${a} b:${b}`)    // a:101 b:101
