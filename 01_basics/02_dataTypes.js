@@ -36,7 +36,6 @@ let isLoggedIn = true; // boolean
 
 // 7. Object
 
-
 console.log(typeof "Amrit"); // string
 console.log(typeof age); // number
 console.log(typeof isLoggedIn); // boolean
