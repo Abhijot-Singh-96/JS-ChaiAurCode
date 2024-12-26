@@ -52,7 +52,7 @@ console.log(    );
 console.log(    );
 
 
-let someNumber = 60
+let someNumber = 64
 
 
 let stringNumber = String(someNumber)      // now, someNumber number is converted to string
