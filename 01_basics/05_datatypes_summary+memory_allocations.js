@@ -170,7 +170,7 @@ let user1 = {
 let user2 = user1
 console.log(user1)            // { email: 'amrit@google.com', UPI: 'amrit@ybl' }
 user2.email = "onkar@google.com"
-console.log(user1)            // { email: 'amrit@google.com', UPI: 'amrit@ybl' }
+console.log(user1)            // { email: 'onkar@google.com', UPI: 'amrit@ybl' }
 console.log(user2)            // { email: 'onkar@google.com', UPI: 'amrit@ybl' }
 // In the above code, user1 is a reference data type, so it is stored in the heap memory.
 // When we assigned user1 to user2, we got the reference of user1 value.
