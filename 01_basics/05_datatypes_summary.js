@@ -143,3 +143,36 @@ console.log(typeof person)                 // object         => object is an obj
 console.log(typeof function1)              // function       => function is a function
 
 
+// ______________________________________________________________________________________________________
+
+// MEMORY ALLCOATION IN JS
+
+// Stack Memory : used in primitve data types, we get the copy of declared value.
+// Heap Memory :   used in reference data types, we get the reference of the declared original value, Any changes done are done directly to the original value.
+
+
+let myYTChannel = "CodeWithAmrit"
+let myNewChannel = myYTChannel
+console.log(myYTChannel)            // CodeWithAmrit
+myNewChannel = "CodeWithAmrit Vlogs"
+console.log(myYTChannel)            // CodeWithAmrit
+console.log(myNewChannel)           // CodeWithAmrit Vlogs
+// In the above code, myYTChannel is a primitive data type, so it is stored in the stack memory.
+// When we assigned myYTChannel to myNewChannel, we got the copy of myYTChannel value.
+// When we changed the value of myNewChannel, it didn't affect the value of myYTChannel.
+// So, the value of myYTChannel remained the same.
+
+
+let user1 = {
+    email : "amrit@google.com",
+    UPI : "amrit@ybl"
+}
+let user2 = user1
+console.log(user1)            // { email: 'amrit@google.com', UPI: 'amrit@ybl' }
+user2.email = "onkar@google.com"
+console.log(user1)            // { email: 'amrit@google.com', UPI: 'amrit@ybl' }
+console.log(user2)            // { email: 'onkar@google.com', UPI: 'amrit@ybl' }
+// In the above code, user1 is a reference data type, so it is stored in the heap memory.
+// When we assigned user1 to user2, we got the reference of user1 value.
+// When we changed the value of user2, it affected the value of user1.
+// So, the value of user1 also changed.
