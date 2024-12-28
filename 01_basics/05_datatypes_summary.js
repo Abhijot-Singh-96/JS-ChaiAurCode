@@ -87,7 +87,7 @@ console.log(typeof bigIntValue)             // bigint
 // ## REFERENCE DATA TYPES
 // ARRAY
 const fruits = ['apple', 'banana', 'mango']
-console.log(fruits)
+console.log(fruits)                    // [ 'apple', 'banana', 'mango' ]
 console.log(typeof fruits)             // object
 // Array is a collection of elements
 
@@ -98,7 +98,7 @@ const person = {
     age: 23,
     city: 'Lahore'
 }
-console.log(person)
+console.log(person)                    // { name: 'Amrit', age: 23, city: 'Lahore' }
 console.log(typeof person)             // object
 // Object is a collection of key-value pairs
 
@@ -111,19 +111,19 @@ console.log(typeof person)             // object
 const function1 = function() {
     console.log('Hello World!')
 }
-console.log(function1)
+console.log(function1)                  // [Function: function1]
 
 // Arrow Function
 const function2 = () => {
     console.log('Hello World!')
 }
-console.log(function2)
+console.log(function2)                // [Function: function2]                      
 
 // Function Declaration
 function greet() {
     console.log('Hello World!')
 }
-console.log(greet)
+console.log(greet)                    // [Function: greet]
 console.log(typeof greet)             // function
 
 // Function is a block of code that can be called by name
