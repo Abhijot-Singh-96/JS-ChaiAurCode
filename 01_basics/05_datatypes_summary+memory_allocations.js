@@ -146,7 +146,6 @@ console.log(typeof function1)              // function       => function is a fu
 // ______________________________________________________________________________________________________
 
 // MEMORY ALLCOATION IN JS
-
 // Stack Memory : used in primitve data types, we get the copy of declared value.
 // Heap Memory :   used in reference data types, we get the reference of the declared original value, Any changes done are done directly to the original value.
 
