@@ -13,7 +13,7 @@ ReferenceError: alert is not defined
 console.log(3
     +
     3);
-    // code readility is important and should be high
+    // code readability is important and should be high
 
 
 // PRIMITIVE DATATYPES
