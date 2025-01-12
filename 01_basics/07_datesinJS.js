@@ -69,7 +69,7 @@ console.log(`${newDate.getDate()} and the time is ${newDate.getHours()}:${newDat
 // returns the current date and time of your PC : getTime(), getFullYear(), getMonth(), getDate(), getHours(), getMinutes(), getSeconds()
 
 
-console.log(newDate.toLocaleString('default', {
+console.log(newDate.toLocaleString('default', {         // default  : internationalization
     weekday: 'long', 
     year: 'numeric',                           // click ctrl + space to see the options                            
     month: 'long', 
