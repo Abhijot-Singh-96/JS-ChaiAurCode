@@ -16,6 +16,7 @@ console.log(myDate.toLocaleTimeString())        // 8:01:22 PM
 console.log(myDate.toISOString())               // 2025-01-10T14:31:22.267Z
 console.log(myDate.toUTCString())               // Fri, 10 Jan 2025 14:31:22 GMT
 console.log(myDate.toJSON())                    // 2025-01-10T14:31:22.267Z
+// console.log(myDate.now())                       // TypeError: myDate.now is not a function
 
 // cordinated universal Time (UTC) is the time standard commonly used across the world. It is the primary time standard by which the world regulates clocks and time. It is within about 1 second of mean solar time at 0° longitude, and is not adjusted for daylight saving time. It is effectively a successor to Greenwich Mean Time (GMT).
 //  ISO stands for International Organization for Standardization. It is a worldwide federation of national standards bodies. ISO is a non-governmental organization that forms a bridge between the public and private sectors.
@@ -54,12 +55,15 @@ console.log(Math.floor(Date.now()/1000/60/60/24/12))  // 1681            returns
 console.log(Math.floor(Date.now()/1000/60/60/24/12/365))  // 46           returns the number of years elapsed since January 1, 1970 00:00:00 UTC
 
 let newDate = new Date()
-console.log(newDate.getTime())                  // 1736579705602
+console.log(newDate.getTime())                  // 1736579705602            
 console.log(newDate.getFullYear())              // 2025
 console.log(newDate.getMonth())                 // 0
 console.log(newDate.getMonth()+1)               // 1
 console.log(newDate.getDate())                  // 12
 
+// console.log(getTime())                          // ReferenceError: getTime is not defined
+// console.log(Date.getFullYear())                 // TypeError: Date.getFullYear is not a function
+console.log(Date)                                  // [Function: Date]
 
 console.log(`${newDate.getDate()} and the time is ${newDate.getHours()}:${newDate.getMinutes()}:${newDate.getSeconds()}`)       //12 and the time is 13:46:24       
 // returns the current date and time of your PC : getTime(), getFullYear(), getMonth(), getDate(), getHours(), getMinutes(), getSeconds()
@@ -76,3 +80,10 @@ console.log(newDate.toLocaleString('default', {
     timeZoneName: 'short'
 }))                                             // Sunday, 12 January 2025 at 1:52:47 pm IST
 console.log(newDate.toLocaleString())           // 12/1/2025, 1:52:47 pm
+
+
+
+
+// mistakes
+// toString() , toLocaleString(), getTime() , getFullYear(), getMonth() are methods of Date object  and making a date object is required to use these methods
+// Date.now can be used without making a date object because it is a static method of Date object and can be used directly with Date object
