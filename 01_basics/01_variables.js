@@ -16,3 +16,33 @@ accountCity = "Amritsar"
 console.log(accountId , accountEmail)
 
 console.table([accountId , accountEmail , accountPassword, accountCity , accountState])
+
+
+
+
+
+/*
+
+let var const difference
+
+illegal shadowing : 
+var can be changed to let in different scope but not vice versa
+let canNOT be changed to var
+
+
+var can be declared multiple times
+let canNOT be declared multiple times , will give  SyntaxError: Identifier 'a' has already been declared
+const canNOT be declared multiple times , will give  SyntaxError
+
+
+intialization is necessary in const
+intialization is not necessary in var, let
+const a;  // SyntaxError: Missing initializer in const declaration
+
+
+
+
+*/
+
+
+
