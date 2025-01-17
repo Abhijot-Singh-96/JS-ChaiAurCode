@@ -155,6 +155,7 @@ console.log(Object.entries(user0))                      // less used            
 
 
 
+
 // doing loop-through in the object , and returning the values and sometimes that value does NOT exist , chances of crashing
 
 console.log(user0.hasOwnProperty("isMarried"))           // true
