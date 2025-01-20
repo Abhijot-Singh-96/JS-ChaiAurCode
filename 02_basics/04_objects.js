@@ -166,3 +166,64 @@ console.log(user0.hasOwnProperty("isLoggedIn"))          // false
 
 
 
+
+
+// Object desctructuring and JSON API
+// Object destructuring : allows you to extract multiple properties from an object and assign them to variables in a single statement.
+
+// both array and object destructuring is used in React              but array destructuring is rare
+
+
+const course = {
+    courseName: "JavaScript",
+    duration: "3 months",
+    price: 999,
+    courseInstructor: "Ranjit Singh"
+}
+
+course.courseName
+
+
+// const {which object value} = object from where
+const {courseInstructor} = course
+
+console.log(courseInstructor)                           // Ranjit Singh
+console.log(course.courseInstructor)                    // Ranjit Singh              no need to write course again and again                    
+
+const {courseInstructor : instructor} = course                                    // renaming the variable
+console.log(instructor);                                // Ranjit Singh
+
+
+// const navbar = (props.companyName) => {}
+const navbar = ({companyName}) => {}
+
+navbar(companyName = "Google")
+
+
+
+
+/*
+
+JSON API : JavaScript Object Notation
+
+
+{
+    "name": "Ranjit Singh",                             // keys are always in double quotes in JSON unlike objects
+    "course": "JavaScript",
+    "price": "free"
+}
+
+
+sometimes, API  can return an array of objects
+[
+    {},
+    {},
+    {}
+]
+
+
+famous APIs : randomuserme.me
+tools to beautify JSON : JSONLint.com, json formatter
+
+fetch() method : used to fetch the data from the API
+*/
