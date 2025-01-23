@@ -204,7 +204,8 @@ navbar(companyName = "Google")
 
 /*
 
-JSON API : JavaScript Object Notation
+JSON API : JavaScript Object Notation       // most popular format for data exchange between a server and a client
+API : Application Programming Interface
 
 
 {
