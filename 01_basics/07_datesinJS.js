@@ -55,12 +55,14 @@ console.log(Math.floor(Date.now()/1000/60/60/24/30))  // 671            returns 
 console.log(Math.floor(Date.now()/1000/60/60/24/30/12))  // 55           returns the number of years elapsed since January 1, 1970 00:00:00 UTC
 console.log(Math.floor(Date.now()/1000/60/60/24/30/12/10))  // 5           returns the number of decade elapsed since January 1, 1970 00:00:00 UTC
 
-let newDate = new Date()
-console.log(newDate.getTime())                  // 1736579705602            
-console.log(newDate.getFullYear())              // 2025
-console.log(newDate.getMonth())                 // 0
-console.log(newDate.getMonth()+1)               // 1
-console.log(newDate.getDate())                  // 12
+let newDate = new Date(1992,4,23)
+console.log(newDate.getTime()/1000/60/60/24/30/12)                // 22.71603009259259
+console.log(Math.floor(newDate.getTime()/1000/60/60/24/30/12))    // 22
+console.log(newDate.getTime())                  // 706559400000            
+console.log(newDate.getFullYear())              // 1992
+console.log(newDate.getMonth())                 // 4
+console.log(newDate.getMonth()+1)               // 5
+console.log(newDate.getDate())                  // 23
 
 // console.log(getTime())                          // ReferenceError: getTime is not defined
 // console.log(Date.getFullYear())                 // TypeError: Date.getFullYear is not a function
