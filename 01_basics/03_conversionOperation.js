@@ -52,7 +52,18 @@ console.log(    );
 console.log(    );
 
 
-let someNumber = 64
+let someNumber = 64                      // 64
+// let someNumber = null                    // null
+// let someNumber = undefined               // undefined    
+//let someNumber = NaN                      // NaN 
+// let someNumber = true                    // true
+// let someNumber = false                   // false
+// let someNumber = "Amrit"                 // Amrit
+// let someNumber = "64"                    // 64
+// let someNumber = "64abc"                 // 64abc
+// let someNumber = " "                     //
+// let someNumber = ""                      //
+// let someNumber = 0                       // 0
 
 
 let stringNumber = String(someNumber)      // now, someNumber number is converted to string
@@ -68,7 +79,7 @@ console.log(    );
 
 let value = 43
 let negValue = -value
-console.log(negValue);
+console.log(negValue);                      // -43
 
 console.log( 2 + 3 ); // 5    // addition  
 console.log( 2 - 3 ); // -1   // subtraction
