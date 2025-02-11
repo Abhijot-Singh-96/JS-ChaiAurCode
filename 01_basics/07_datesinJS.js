@@ -44,15 +44,16 @@ console.log(myCreatedDate1.toLocaleString())                     // 23/1/2025, 6
 
 
 // Date.now() method : returns the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC
-console.log(Date.now())                         // 1736579705602        returns the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC
+console.log(Date.now())                         // 1739294980194        returns the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC
 console.log(myCreatedDate.getTime())            // 1737570600000
 
-console.log(Math.floor(Date.now()/1000))        // 1736579705           returns the number of seconds elapsed since January 1, 1970 00:00:00 UTC
-console.log(Math.floor(Date.now()/1000/60))     // 28942995             returns the number of minutes elapsed since January 1, 1970 00:00:00 UTC
-console.log(Math.floor(Date.now()/1000/60/60))  // 482383                returns the number of hours elapsed since January 1, 1970 00:00:00 UTC
-console.log(Math.floor(Date.now()/1000/60/60/24))  // 20182              returns the number of days elapsed since January 1, 1970 00:00:00 UTC
-console.log(Math.floor(Date.now()/1000/60/60/24/12))  // 1681            returns the number of months elapsed since January 1, 1970 00:00:00 UTC
-console.log(Math.floor(Date.now()/1000/60/60/24/12/365))  // 46           returns the number of years elapsed since January 1, 1970 00:00:00 UTC
+console.log(Math.floor(Date.now()/1000))        // 1739294980           returns the number of seconds elapsed since January 1, 1970 00:00:00 UTC
+console.log(Math.floor(Date.now()/1000/60))     // 28988249             returns the number of minutes elapsed since January 1, 1970 00:00:00 UTC
+console.log(Math.floor(Date.now()/1000/60/60))  // 483137                returns the number of hours elapsed since January 1, 1970 00:00:00 UTC
+console.log(Math.floor(Date.now()/1000/60/60/24))  // 20130              returns the number of days elapsed since January 1, 1970 00:00:00 UTC
+console.log(Math.floor(Date.now()/1000/60/60/24/30))  // 671            returns the number of months elapsed since January 1, 1970 00:00:00 UTC
+console.log(Math.floor(Date.now()/1000/60/60/24/30/12))  // 55           returns the number of years elapsed since January 1, 1970 00:00:00 UTC
+console.log(Math.floor(Date.now()/1000/60/60/24/30/12/10))  // 5           returns the number of decade elapsed since January 1, 1970 00:00:00 UTC
 
 let newDate = new Date()
 console.log(newDate.getTime())                  // 1736579705602            
