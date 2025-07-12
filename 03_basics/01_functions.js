@@ -10,8 +10,8 @@ function myfuntion() {
 }
 
 // calling the function
-myfuntion                                                  // reference
-myfuntion();                                               // execution                // calling the function
+myfuntion                                                                               // reference
+myfuntion();                                                                            // execution                // calling the function
 
 
 
@@ -117,3 +117,72 @@ function login4(username) {
 }
 
 console.log(login4());                                        // undefined 
+
+console.log();
+
+
+
+
+
+
+// function with default parameters 
+function login5(username = "Guest") {
+    return `${username} just logged in`;
+}
+console.log(login5());                                                                  // Guest just logged in
+console.log(login5("Jangjit Singh"));                                                   // Jangjit Singh just logged in
+
+
+function login6(username = "Guest", password = "1234") {
+    return `${username} just logged in with password ${password}`;
+}
+console.log(login6());                                                                  // Guest just logged in with password 1234
+console.log(login6("Jangjit Singh"));                                                   // Jangjit Singh just logged in with password 1234
+console.log(login6("Jangjit Singh", "password123"));                                    // Jangjit Singh just logged in with password password123
+
+console.log();
+
+
+
+
+
+// OBJECT in function
+
+const obj = {
+    name: "Jangjit Singh",
+    age: 21,
+    state: "Panjaab"
+}
+
+function printObj(anyObj){
+    return `${anyObj.name} is my friend and his age is ${anyObj.age} , he lives in ${anyObj.state}.`
+}
+
+
+console.log(printObj(obj));                                                             // Jangjit Singh is my friend and his age is 21 , he lives in Panjaab. 
+console.log(printObj(
+    {
+        name: "Abhi",
+        age: 20,
+        state: "Delhi"
+    }
+));                                                                                     // Abhi is my friend and his age is 20 , he lives in Delhi.
+console.log( printObj(  {name: "Abhi",age: 20,state: "Delhi"}  ) );                     // Abhi is my friend and his age is 20 , he lives in Delhi.
+
+console.log();
+
+
+
+
+// ARRAY in function
+const arr = [13, 42, 53, 64, 35];
+
+function printArr(anyArr) {
+    return `The array is ${anyArr}, its length is ${anyArr.length} and its second element is ${anyArr[1]}.`;
+    // return "The array is ${anyArr}, its length is ${anyArr.length} and its second element is ${anyArr[1]}."                  // this will not work because the backticks are not used
+                                                                                                                                // backticks are used to create template literals, which allow for string interpolation;
+                                                                                                                                // O/P : The array is ${anyArr}, its length is ${anyArr.length} and its second element is ${anyArr[1]}.
+}
+
+console.log(printArr(arr));                                                              // The array is 13,42,53,64,35, its length is 5 and its second element is 42.
+console.log(printArr([0, 1, 2, 3, 4, 5, 6, 7]));                                         // The array is 0,1,2,3,4,5,6,7, its length is 8 and its second element is 1.             
