@@ -1,6 +1,11 @@
 // function : means a block of code that can be called 
 
-// syntax :   function functionName() {}            keyword : function
+// syntax :   
+// 1.  function functionName() {}            keyword : function
+// 2.  const fctnName = function(){}         
+// 3.  const fctnName = () => {}
+
+
 
 function myfuntion() {
     console.log("A");
@@ -123,8 +128,6 @@ console.log();
 
 
 
-
-
 // function with default parameters 
 function login5(username = "Guest") {
     return `${username} just logged in`;
@@ -145,6 +148,36 @@ console.log();
 
 
 
+
+
+// Rest operator (...args) : allows us to pass an indefinite number of arguments to a function
+// It collects all the arguments passed to the function into an array
+// Note: Rest operator is used in function parameters, while spread operator is used in function calls or array literals.           ... is both rest and spread operator, depending on the usecase
+
+// rest operator => saare arguments jo function ko diye gaye hain, unhe ek "ARRAY" mein store kar deta hai.
+
+function shoppingCartPrice(...price){
+    return price
+}    
+console.log(shoppingCartPrice(200, 434 , 532, 3900));                                  // [ 200, 434, 532, 3900 ]
+
+
+function shoppingCartPrice2(val1, val2, ...price){
+    return price                                                                        
+}    
+console.log(shoppingCartPrice2(200, 434 , 532, 3900));                                  // [ 532, 3900 ]
+
+
+
+
+
+
+
+
+
+
+
+console.log();
 
 // OBJECT in function
 
