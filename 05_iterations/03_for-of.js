@@ -17,6 +17,14 @@
 
 // NOT used for : object
 
+
+// There are 2 types of data retrives from database
+// i)  ["" , "" , ""]
+// ii) [{} , {} , {}]
+
+// Starting from :
+// ["" , "" , ""]
+
 // 1. for of loop on ARRAY
 const array = [1, 2 ,3 ,4, 5];
 for (const arr of array) {
